@@ -9,7 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  width: 100vw;
+  width: 100%;
+  height: max-content;
 }
 .act {
   width: 100vw;
@@ -87,7 +88,7 @@ ul li a:hover {
 .poto {
   overflow:scroll;
   display:flex;
-  width: 900px;
+  width: 100%;
 }
 .poto img {
   width: fit-content;
@@ -133,10 +134,16 @@ footer {
   color: white;
 }
 @media (max-width:800px) {
+  body {
+    width: 100%;
+  }
   .berer {
     display: block;
   }
+  .main {
+    width: 90%;
+  }
   .aside {
-    width: 72vw;
+    width: 90%;
   }
 }
